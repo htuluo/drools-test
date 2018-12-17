@@ -3,4 +3,7 @@
     <kbase name="helloWorldBase">
         <ksession name="helloWorldSession"/>
     </kbase>
+    <kbase name="ageBase" packages="rules">
+        <ksession name="ageSession"/>
+    </kbase>
 </kmodule>
