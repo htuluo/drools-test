@@ -1,0 +1,8 @@
+package  rule2;
+
+rule "rule2"
+when
+ eval(true)
+then
+    System.out.println("rule2");
+ end

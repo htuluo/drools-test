@@ -17,11 +17,11 @@ public class PersonTest {
     @Test
     public void personTest(){
         KieServices kieServices=KieServices.Factory.get();
-        KieContainer kieClasspathContainer = kieServices.getKieClasspathContainer();
+        KieContainer kieClasspathContainer = kieServices.getKieClasspathContainer("ageBase");
         KieSession kieSession = kieClasspathContainer.newKieSession("ageSession");
         Person person=new Person(12,"aa");
         kieSession.insert(person);
-        kieSession.fireAllRules();
+        kieSession.fireAllRules(3);
         kieSession.dispose();
 
     }
